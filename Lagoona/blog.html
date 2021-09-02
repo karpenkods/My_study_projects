@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Блог</title>
+</head>
+
+<body>
+  <div class="container">
+    <a href="index.html" class="page">назад</a>
+    <h1 class="header-blog2">Блог</h1>
+    <div class="blog2">
+      <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
+        <label for="name" class="name-blog">Ваше имя*</label>
+        <input minlength="2" maxlength="30" required class="btn input-blog" name="name" type="text" placeholder="Имя"
+          id="name">
+        <label for="mail" class="name-blog">Электронная почта*</label>
+        <input required class="btn input-blog" name="email" type="email" placeholder="Ваш E-mail" id="mail">
+        <label for="sub" class="name-blog">Тема сообщения</label>
+        <input class="btn input-blog" name="sub" type="text" id="sub">
+        <div class="text">
+          <p class="text-message-blog">Текст сообщения<textarea rows="10" cols="45" name="text"
+              class="textarea-blog"></textarea>
+          </p>
+          <button class="btn button-blog" name="submit" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

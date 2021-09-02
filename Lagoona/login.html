@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Личный кабинет</title>
+</head>
+
+<body>
+  <div class="container">
+    <a href="index.html" class="page">назад</a>
+    <h1 class="header-blog">Личный кабинет</h1>
+    <div class="blog">
+      <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
+        <label for="name" class="name">Ваше имя*</label>
+        <input minlength="2" maxlength="30" required class="btn input" name="name" type="text" placeholder="Имя"
+          id="name">
+        <label for="mail" class="name">Электронная почта*</label>
+        <input required class="btn input" name="email" type="email" placeholder="Ваш E-mail" id="mail">
+        <label for="password" class="name">Пароль*</label>
+        <input required class="btn input" name="password" type="password" placeholder="Введите пароль" id="password">
+        <label for="password2" class="name">Повторите пароль*</label>
+        <input required class="btn input" name="password" type="password" placeholder="Введите пароль ещё раз" id="password2">
+        <label for="data" class="name">Дата рождения*</label>
+        <input required class="btn input" name="date" type="date" id="data">
+        <label for="tel" class="name">Телефон*</label>
+        <input required class="btn input" name="tel" type="number" placeholder="Ваш номер телефона" id="tel">
+        <div class="name">
+          <button class="btn button" type="submit">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
