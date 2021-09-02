@@ -1,0 +1,326 @@
+body {
+  background: #444;
+  font-family:'Gill Sans', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  color:#FFCA28;
+  width: 250px;
+  margin-top: 20px;
+  white-space: nowrap;
+  font-family:'Franklin Gothic Medium', sans-serif;
+  font-size: 40px;
+  background-color: transparent;
+  border: 2px solid  #FFCA28;;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FFCA28;
+  color: #000;
+  transition: 0.3s;
+ }
+
+ .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+}
+
+ .cards_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 700px;
+  margin: auto;
+}
+
+[data-view="card"] {
+  transform: rotateY(180deg);
+  width: 105px;
+  height: 105px;
+  margin: 5px;
+  cursor: pointer;
+  background-image: url(/img/Black-And-Blue-Globe.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+[data-view="card"]:hover {
+  box-shadow: 0 0 5px 3px rgba(255, 202, 40, 0.5);
+  transition: 0.25s;
+}
+
+.turned {
+  transition: 0.2s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+  border-radius: 50%;
+}
+
+.reverse {
+  transition: 0.3s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
+.delete {
+  transition: 1s;
+  opacity: 0;
+  cursor: default;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: translateX(500%);
+}
+
+.delete[data-item="1"],
+.turned[data-item="1"] {
+  background: url(/img/china.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="2"],
+.turned[data-item="2"] {
+  background: url(/img/russia.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="3"],
+.turned[data-item="3"] {
+  background: url(/img/united-kingdom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="4"],
+.turned[data-item="4"] {
+  background: url(/img/united-states.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="5"],
+.turned[data-item="5"] {
+  background: url(/img/south-korea.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="6"],
+.turned[data-item="6"] {
+  background: url(/img/european-union.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="7"],
+.turned[data-item="7"] {
+  background: url(/img/vietnam.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="8"],
+.turned[data-item="8"] {
+  background: url(/img/germany.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="9"],
+.turned[data-item="9"] {
+  background: url(/img/belgium.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="10"],
+.turned[data-item="10"] {
+  background: url(/img/greece.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="11"],
+.turned[data-item="11"] {
+  background: url(/img/israel.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="12"],
+.turned[data-item="12"] {
+  background: url(/img/brazil.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="13"],
+.turned[data-item="13"] {
+  background: url(/img/chile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="14"],
+.turned[data-item="14"] {
+  background: url(/img/jamaica.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="15"],
+.turned[data-item="15"] {
+  background: url(/img/japan.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="16"],
+.turned[data-item="16"] {
+  background: url(/img/romania.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="17"],
+.turned[data-item="17"] {
+  background: url(/img/switzerland.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delete[data-item="18"],
+.turned[data-item="18"] {
+  background: url(/img/italy.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.countdown-box {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 40px;
+  font-weight: 600;
+  width: 60px;
+  color: #FFCA28;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 5%;
+  left: 41%;
+  width: 350px;
+  height: 350px;
+  z-index: 100;
+}
+
+.win {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 5%;
+  left: 41%;
+  width: 350px;
+  height: 350px;
+  z-index: 100;
+}
+
+.text {
+  margin-bottom: 15px;
+  color:#FFCA28;
+  font-family:'Franklin Gothic Medium', sans-serif;
+  font-size: 54px;
+  font-weight: 400;
+}
+
+.close-button {
+  padding: 10px 20px;
+  color:#FFCA28;
+  margin-top: 20px;
+  font-family:'Franklin Gothic Medium', sans-serif;
+  font-size: 40px;
+  background-color: transparent;
+  border: 2px solid  #FFCA28;;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+ background-color: #FFCA28;
+ color: #000;
+ transition: 0.3s;
+}
+
+.open-button {
+  padding: 10px 20px;
+  color:#FFCA28;
+  margin-top: 20px;
+  font-family:'Franklin Gothic Medium', sans-serif;
+  font-size: 40px;
+  background-color: transparent;
+  border: 2px solid  #FFCA28;;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.open-button:hover {
+ background-color: #FFCA28;
+ color: #000;
+ transition: 0.3s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: #000;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.closed {
+  display: none;
+  }
+
+
+
