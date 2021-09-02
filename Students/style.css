@@ -1,0 +1,258 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(226, 226, 226);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading_text {
+  color: red;
+}
+
+.table_sort th {
+  padding: 0 15px;
+  color: #000;
+  background: #007bff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.table_sort th:hover:not(:last-child) {
+  color: #ddd;
+  cursor: pointer;
+}
+
+.del_input {
+  cursor: default;
+}
+
+.table_sort td,
+.table_sort th {
+  height: 50px;
+  text-align: center;
+  border: 2px solid #847b7b;
+}
+
+.table_sort td:nth-child(-n+4) {
+  text-align: left;
+  padding-left: 15px;
+}
+
+tr:nth-child(even) {
+  background: #b5b3b3;
+}
+
+tr:nth-child(odd) {
+  background: #fff;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+  position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+  position: absolute;
+  right: 3%;
+}
+
+th.sorted[data-order="-1"]::after {
+  content: "▲";
+}
+
+th.sorted:last-child::after {
+  content: "";
+}
+
+th.sorted[data-order="1"]::after {
+  content: "▼";
+}
+
+th.sorted:last-child::after {
+  content: "";
+}
+
+.wrapper table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.del_button {
+  width: 100%;
+  color: #000;
+  font-size: 36px;
+  transition: 0.2s;
+}
+
+.del_button:hover {
+  color: #007bff;
+}
+
+.add_student {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  width: 220px;
+  background: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.add_student::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.add_student:hover::placeholder {
+  color: #ddd;
+}
+
+.add_student:hover {
+  color: #ddd;
+}
+
+.modal_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.closed {
+  display: none;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 18.8%;
+  width: 1200px;
+  background-color: #847b7b;
+  animation-name: animate;
+  animation-duration: 0.5s;
+}
+
+@keyframes animate {
+  from {
+    top: -320px;
+    opacity: 0
+  }
+
+  to {
+    top: 8%;
+    opacity: 1
+  }
+
+  ;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 60px;
+}
+
+.family {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_text {
+  margin-left: 40px;
+  width: 400px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 35px;
+  outline: none;
+  border: none;
+}
+
+.input_text:hover {
+  background-color: rgba(0, 123, 255, 0.2);
+}
+
+.input_text:focus {
+  background-color: #007bff;
+}
+
+.name {
+  justify-content: space-between;
+  width: 50%;
+}
+
+.fac {
+  align-items: baseline;
+  display: flex;
+  width: 40%;
+}
+
+.date {
+  width: 20%;
+  margin: 0;
+  margin-left: -200px;
+  font-size: 22px;
+}
+
+.clear_fix {
+  display: flex;
+}
+
+button {
+  color: #000;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: #ddd;
+}
+
+.cancel_btn {
+  padding: 15px 20px;
+  background-color: #f44336;
+}
+
+.add_btn {
+  padding: 15px 20px;
+  background-color: #007bff;
+}
+
+.cancel_btn,
+.add_btn {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE = edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  <script defer src="/main.js"></script>
+  <link rel="stylesheet" href="/style.css">
+  <title>Список студентов</title>
+</head>
+
+<body>
+
+  <h1 class="heading">Список студентов</h1>
+  <div class="wrapper">
+    <div class="inputs">
+      <input class="add_student" type="text" placeholder="Поиск по Фамилии" id="search-surname">
+      <input class="add_student" type="text" placeholder="Поиск по Имени" id="search-name">
+      <input class="add_student" type="text" placeholder="Поиск по Отчеству" id="search-lastname">
+    </div>
+    <table class="table_sort" id="info-table">
+      <div id="modal" class="modal">
+        <h2 class="heading">Добавить студента</h2>
+        <p class="heading heading_text">Все поля обязательны для заполнения</p>
+        <form class="modal-content">
+          <div class="container">
+            <div class="family">
+              <div class="name">
+                <div class="choice" id="sss">
+                  <h3>Фамилия:</h3>
+                  <input class="input_text" type="text" id="surname-student">
+                </div>
+                <div class="choice">
+                  <h3>Имя:</h3>
+                  <input class="input_text" type="text" id="name-student">
+                </div>
+                <div class="choice">
+                  <h3>Отчество:</h3>
+                  <input class="input_text" type="text" id="lastname-student">
+                </div>
+              </div>
+              <div class="fac">
+                <h3>Факультет:</h3>
+                <select class="input_text">
+                  <option value="Технология машиностроения">Технология машиностроения</option>
+                  <option value="Литьё под давлением">Литьё под давлением</option>
+                  <option value="Сварочное производство">Сварочное производство</option>
+                </select>
+              </div>
+            </div>
+            <div class="choice">
+              <label for="birth">
+                <h3>Дата рождения:</h3>
+              </label>
+              <input class="input_text date" type="date" id="birth" value="" min="1900-01-01" max="` + now + `">
+              <label for="start">
+                <h3>Дата поступления:</h3>
+              </label>
+              <input class="input_text date" type="date" id="start" value="" min="2000-01-01" max="` + now + `">
+            </div>
+            <div class="clear_fix">
+              <button type="button" class="cancel_btn">Отмена</button>
+              <button type="submit" class="add_btn">Добавить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <thead>
+        <tr>
+          <th>Фамилия</th>
+          <th>Имя</th>
+          <th>Отчество</th>
+          <th>Факультет</th>
+          <th>Дата рождения</th>
+          <th>Дата поступления</th>
+          <th class="del_input">Удалить <br> студента</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Иванов</td>
+          <td>Иван</td>
+          <td>Иванович</td>
+          <td>Технология машиностроения</td>
+          <td>2001-05-12 (20 лет)</td>
+          <td>2018-09-01 (3 курс)</td>
+          <td><button class="del_button" onclick="deleteRow(this)"><span>&#10008;</span></button></td>
+        </tr>
+        <tr>
+          <td>Петров</td>
+          <td>Петр</td>
+          <td>Петрович</td>
+          <td>Литьё под давлением</td>
+          <td>2003-02-25 (18 лет)</td>
+          <td>2021-09-01 (1 курс)</td>
+          <td><button class="del_button" onclick="deleteRow(this)"><span>&#10008;</span></button></td>
+        </tr>
+        <tr>
+          <td>Евгеньев</td>
+          <td>Евгений</td>
+          <td>Евгеньевич</td>
+          <td>Сварочное производство</td>
+          <td>2002-06-05 (19 лет)</td>
+          <td>2019-09-01 (2 курс)</td>
+          <td><button class="del_button" onclick="deleteRow(this)"><span>&#10008;</span></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button class="add_student" id="add-student">Добавить студента</button>
+  <div class="modal_overlay"></div>
+
+  <script>
+
+    function deleteRow(element) {
+
+      if (!confirm("Вы хотите удалить студента?")) {
+        return;
+      };
+
+      let row = element.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    };
+
+  </script>
+
+</body>
+
+</html>
