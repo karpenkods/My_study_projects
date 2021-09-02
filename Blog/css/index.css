@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'hobbitonbrushhand';
+  src: url('/fonts/hobbitonbrushhand.woff') format('woff');
+  font-weight: 600;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'conkordia';
+  src: url('/fonts/conkordia.woff') format('woff');
+  font-weight: 600;
+  font-style: oblique;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff !important;
+}
+
+html {
+  font-family: 'hobbitonbrushhand', 'conkordia';
+}
+
+body {
+  display: grid;
+  justify-content: flex-end;
+  background: url("/img/jesson-w-by-jesson-w-armored-elf-girl-elf-elf-girl-sword-fan.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#pages {
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+}
+
+.tape {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+.post::before {
+  content: "";
+  position: absolute;
+  margin: -20px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.1);
+  filter: blur(20px);
+  transition: 0.2s;
+}
+
+.post:hover::before {
+  content: "";
+  position: absolute;
+  margin: -20px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.3);
+}
+
+.post:active::before {
+  content: "";
+  position: absolute;
+  margin: -20px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(100, 20, 20, 0.5);
+  transition: 0.2s;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 10px;
+  height: 70px;
+  text-align: center;
+  font-family: "conkordia";
+  font-size: 76px;
+  color: rgb(149, 142, 142);
+}
+
+.small__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 32px;
+  color: rgb(149, 142, 142);
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "hobbitonbrushhand";
+  font-size: 28px;
+  border: 2px solid rgba(100, 20, 20, 0.8);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.page:hover {
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.2);
+  border: none;
+  transition: 0.3s;
+}
+
+.page:active {
+  box-shadow: inset 0 0 2000px rgba(100, 20, 20, 0.8);
+  transition: 0.2s;
+}

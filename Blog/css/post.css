@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'hobbitonbrushhand';
+  src: url('/fonts/hobbitonbrushhand.woff') format('woff');
+  font-weight: 600;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'conkordia';
+  src: url('/fonts/conkordia.woff') format('woff');
+  font-weight: 600;
+  font-style: oblique;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff !important;
+}
+
+html {
+  font-family: 'hobbitonbrushhand', 'conkordia';
+}
+
+body {
+  display: grid;
+  justify-content: flex-start;
+  background: url("/img/b645ba0bcc546165c3e2b7c4b9496178.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#post {
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.tape {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 30px;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+.post::before {
+  content: "";
+  position: absolute;
+  margin: -20px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.1);
+  filter: blur(20px);
+  transition: 0.2s;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 48px;
+  color: rgb(149, 142, 142);
+  line-height: 50px;
+}
+
+.body {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #007bff;
+  line-height: 30px;
+}
+
+.more {
+  margin-bottom: 20px;
+  width: fit-content;
+  font-size: 48px;
+  color: rgba(100, 20, 20) !important;
+  line-height: 30px;
+  transition: 0.3s;
+}
+
+.more::before {
+  content: "\2190";
+  font-family: 'conkordia';
+  font-size: 48px;
+  color: rgba(100, 20, 20) !important;
+  transition: 0.3s;
+}
+
+.more:hover {
+  color: rgb(149, 142, 142) !important;
+}
+
+.more:hover::before {
+  color: rgb(149, 142, 142) !important;
+}
+
+.more:active {
+  color: rgba(100, 20, 20) !important;
+}
+
+.more:active::before {
+  color: rgba(100, 20, 20) !important;
+}
+
+.comment {
+  font-size: 24px;
+  color: rgb(149, 142, 142);
+  line-height: 50px;
+}
+
+.name {
+  color: rgb(149, 142, 142);
+}
+
+.comm {
+  color: #007bff;
+}
+
+.email {
+  color: rgb(171, 25, 25);
+}
