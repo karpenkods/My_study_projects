@@ -14,7 +14,7 @@ window.addEventListener('scroll', function () {
 
 			var myPlacemark = new ymaps.Placemark([55.758463, 37.601079], {}, {
 				iconLayout: 'default#image',
-				iconImageHref: '../img/label.svg',
+				iconImageHref: './img/label.svg',
 				iconImageSize: [30, 42],
 				iconImageOffset: [-3, -42]
 			});
