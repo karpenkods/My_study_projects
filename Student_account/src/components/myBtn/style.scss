@@ -1,0 +1,27 @@
+.btn-card {
+    background: #007bff;
+    width: 110px;
+    border: 1px solid gray;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    min-height: 30px;
+
+    &:disabled {
+        opacity: 0.6;
+        color: #000;
+    }
+
+    &.primary {
+        background: #007bff;
+    }
+
+    &.secondary {
+        background: #fd0d0d;
+    }
+
+    &.defaul {
+        background: #9c9a9a;
+    }
+}

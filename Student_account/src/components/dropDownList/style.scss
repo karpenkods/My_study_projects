@@ -1,0 +1,119 @@
+input :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.ui[class*="right labeled"].input>input:focus {
+    border-right-color: none!important;
+}
+
+ui.input.focus>input, .ui.input>input:focus {
+    border-color: none;
+    color: rgba(0,0,0,.8);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ui.input.focus>input, .ui.input>input {
+    background: #fff;
+}
+
+.ui.right.labeled.input {
+    box-sizing: border-box;
+}
+
+// .menu.transition.none {
+//     display: none;
+// }
+
+.menu.transition.block {
+    display: block;
+    height: auto;
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.ui.dropdown.label {
+    position: static;
+    height: 100%!important;
+    display: flex;
+    align-items: center;
+    border: 1px solid #bbb5b5;
+
+}
+
+.ui.dropdown > .dropdown.icon {
+    position: relative;
+    // width: auto;
+    font-size: .85714286em;
+    margin-left: 20%;
+    margin-right: 50%;
+}
+
+.icon {
+    right: 0!important;
+}
+
+.ui.input > input {
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: center;
+    width: 210px;
+    font-size: 16px;
+    border: 1px solid #bbb5b5;
+    outline: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.ui.dropdown > .dropdown.icon {
+    margin: 0;
+}
+
+.ui.dropdown .menu .selected.item, .ui.dropdown.selected {
+    background: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.ui.dropdown .menu .selected.item:hover {
+    background: #d3d3d3;
+}
+
+.default-placeholder {
+    min-width: auto!important;
+}
+
+.default-placeholder {
+    width: 242px!important;
+}
+
+.ui.right.labeled.input.light {
+    height: 25px!important;
+    // margin-bottom: 15px!important;
+    margin-bottom: 0;
+}
+
+.ui.right.labeled.input.middle {
+    height: 30px!important;
+    // margin-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.ui.right.labeled.input.big {
+    height: 55px!important;
+    margin-bottom: 0;
+    width: 240px;
+    box-sizing: border-box;
+}
+
+.search-menu__item {
+    margin-bottom: 0!important;
+}
+
+.ui.labeled.input>.label:not(.corner) {
+    padding-top: 0;
+    padding-bottom: 0;
+}

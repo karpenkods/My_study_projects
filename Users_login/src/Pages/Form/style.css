@@ -1,0 +1,209 @@
+/* Services */
+
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #7C9CBF;
+    font-size: 16px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.form {
+    max-width: 460px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 30px 0 30px;
+}
+
+.form__header {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.form__title {
+    font-weight: bold;
+    font-size: 34px;
+    color: #2C2738;
+}
+
+.form__account {
+    display: flex;
+}
+
+.form__text {
+    font-size: 16px;
+    color: #2C2738;
+    margin-right: 6px;
+}
+
+.form__a {
+    color: #0880AE;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.users-info__item {
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.users-info__item:last-child {
+    margin-bottom: 0;
+}
+
+.users-info__span {
+    font-size: 16px;
+    color: #756F86;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.users-info__input {
+    color: #2C2738;
+    font-size: 16px;
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    background: #FFFFFF;
+    border: 1px solid #DBE2EA;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.users-info__input:focus {
+    border: 2px solid #0880AE;
+}
+
+.users-info__option {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 16px;
+}
+
+.users-info__option:hover {
+    background: #EBF4F8;
+}
+
+.users-info__error {
+    color: #FF7171;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 8px;
+}
+
+.conditions {
+    margin-top: 34px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.conditions__check {
+    opacity: 0;
+    position: absolute;
+    z-index: 99999;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.conditions__text {
+    color: #756F86;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.conditions__a {
+    color: #0880AE;
+    text-decoration: none;
+}
+
+.defolt__span {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+    border: 1px solid #0880AE;
+}
+
+.conditions__check:checked + .defolt__span:before {
+    content: '\2714';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: #0880AE;
+    transform: translate(-50%, -50%);
+    border: 2px solid #0880AE;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+    border-radius: 4px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer__btn {
+    background: #0880AE;
+    box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    height: 56px;
+    cursor: pointer;
+    color: #EBF4F8; 
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.5s;
+    font-weight: 500;
+}
+
+.footer__btn:hover {
+    border: 2px solid rgba(44, 39, 56, 0.86);
+}
+
+.footer__btn:disabled {
+    background: #DBE2EA;
+    cursor: not-allowed;
+    border: none;
+    color: #B1B5BF;
+}

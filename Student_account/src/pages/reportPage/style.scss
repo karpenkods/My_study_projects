@@ -1,0 +1,141 @@
+.report-page {
+    margin-top: 100px;
+
+    &__inner {
+        margin-bottom: 50px;
+    }
+    
+    &__our {
+        background: #e8e8e8;
+        padding-top: 40px;
+        position: relative;
+    }
+
+    &__our-container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 160px;
+    }
+
+    &__our-left {
+        width: 420px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__item-text {
+        margin-bottom: 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__our-right {
+        width: 420px;
+    }
+
+    &__item-text_last {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__period {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    &__span {
+        font-size: 15px;
+        margin-right: 15px;
+        margin-left: 5px;
+    }
+    
+    &__span:first-child {
+        margin-left: 0;
+    }
+
+    &__btn {
+        color: white;
+        height: 30px;
+        
+        box-sizing: border-box;
+    }
+
+    &__btn_left {
+        background: #5050ff;
+        border: 1px solid #0000b1;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    &__btn_right {
+        color: black;
+        background: #c7e5ff;
+        border: 1px solid #8ca3b7;
+    }
+
+    &__btn_left:hover {
+        color: black;
+    }
+
+    &__btn_right:hover {
+        color: #8e8e8e;  
+    }
+
+    &__reset {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+
+.report-page__offer {
+    margin-bottom: 100px;
+
+    .table {
+
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid;
+            border-left: 1px solid;
+            border-right: 1px solid;
+        }
+
+        &__item:last-child {
+            border-bottom: 1px solid;
+        }
+        
+        &__text {
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 30px;    
+            width: 252px;
+            font-size: 20px;
+            border-right: 1px solid;
+        }
+
+        &__text:first-child {
+            width: 50px;
+        }
+
+        &__text:last-child {
+            border-right: none;
+        }
+    }
+}

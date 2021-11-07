@@ -1,0 +1,23 @@
+.approved-page {
+    margin-top: 20px;
+    
+    &__menu {
+        background: #e8e8e8;
+    }
+
+    &__tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    &__cards {
+        margin-top: 50px;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+    }
+}

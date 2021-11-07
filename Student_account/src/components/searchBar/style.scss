@@ -1,0 +1,119 @@
+/* Specifications */
+
+button:active, button:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+}
+
+button::-moz-focus-inner {
+    border: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+}
+
+input::-moz-placeholder { color: red; }
+input::-webkit-input-placeholder { color: #cacaca; }
+
+/*                                                    */
+
+.search-menu {
+    display: flex;
+    justify-content: space-between;
+    background: #f3f3f3;
+    padding: 10px 20px 10px 40px;
+    max-width: 1350px;
+    border: 1px solid #d8d8d8;
+
+    &__item {
+        height: 55px!important;
+        width: 200px;
+        border: 2px solid #d0caca;
+        outline: none;
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+}
+
+.btn-item {
+    color: white;
+    font-weight: bold;
+    height: 55px;
+    width: 160px;
+    background: gray;
+    border: 0;
+    border-radius: 14px;
+}
+
+.default-placeholder {
+    height: 55px;
+    width: 200px;
+    outline: none;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    min-width: auto;
+    color: #cacaca;
+    border: 1px solid #bbb5b5!important;;
+}
+
+.text {
+    color: black;
+}
+
+.default-placeholder .text {
+    text-align: center;
+    min-width: auto;
+}
+
+.icon {
+    right: -10px;
+}
+
+.calendar.visible {
+    z-index: 999999;
+    display: block;
+}
+
+.calendar-hooks {
+    background: gray!important;
+}
+
+.hook {
+    border: 1px solid gray!important;
+}
+
+.default-placeholder .icon .date-dots .dot {
+    background: gray!important;
+}
+
+.default-placeholder .icon .calendar-hooks .hook {
+    border: 1px solid gray!important;
+}
+
+.default-placeholder .icon {
+    border: 1px solid gray!important;
+}
+
+.search-menu > i {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-menu > .fa.fa-undo.opacity {
+    opacity: 0;
+}
+
+.add-card__input_search-bar {
+    height: auto;
+    margin-bottom: 0;
+}
+
+.default-placeholder .text {
+    text-align: center!important;
+}

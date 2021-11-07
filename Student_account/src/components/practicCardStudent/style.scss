@@ -1,0 +1,250 @@
+.practic-card {
+    width: 800px;
+    margin: 0 auto;
+    border: 2px gray solid;
+    background-color: #f8f8f8;
+    font-family: Neucha;
+    overflow-y: scroll;
+    height: 500px;
+
+    &__header {
+        background: white;
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 28px;
+        margin: 0;
+        color: black;
+    }
+
+    &__tools {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 35px;
+        color: #007bff;
+    }
+
+    &__tools > i {
+        cursor: pointer;
+    }
+
+    &__tools > i:last-child {
+        margin-left: 20px;
+    }
+
+    &__tools > i:hover {
+        color: #1562aa;
+    }
+}
+
+.practic-card-info {
+    display: flex;
+    border-top: 2px gray solid;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+    padding-left: 8px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    &__img {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    &__curator {
+        margin-left: auto;
+    }
+
+    &__item {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+        justify-content: end;
+        margin-bottom: 12px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__item > i {
+        color: #007bff;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 20px;
+        color: #646464;
+        text-decoration: underline;
+    }
+
+    .our-input > input {
+        width: 190px;
+    }
+    
+    &__text {
+        margin-left: 20px;
+        color: black;
+    }
+
+    &__text:first-child {
+        margin-left: 0;
+    }
+
+    &__appraisal {
+        text-align: center;
+        text-decoration: underline;
+        color: #007bff;
+        width: 100px;
+        font-size: 15px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    
+    &__btn {
+        margin: 0 auto;
+        width: 150px;
+        background: #2669ff;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0;
+        line-height: 1.2;
+        border-radius: 14px;
+    }
+
+    &__evaluation {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    &__label > input {
+        width: 190px;
+    }
+
+    &__text_end {
+        width: max-content;
+    }
+
+    &__curator-name {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        width: 150px;
+        height: auto;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+}
+
+.practic-card-evaluation {
+
+    &__item {
+        margin: 0 auto;
+        height: 55px;
+        border: 1px;
+        background-color: #e0e0e0;
+        border: 2px gray solid;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 0;  
+        font-size: 16px;
+        color: #646464;
+        text-decoration: underline;
+    }
+
+    &__file {
+        color: #646464;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        background: #e0e0e0;
+        border: 2px solid gray;
+        resize: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__description {
+        margin-bottom: 0;
+    }
+
+    &__input {
+        position: absolute;
+        cursor: pointer;
+        width: 101px;
+        top: -1px;
+        opacity: 0;
+        height: 50px;
+    }
+}
+
+.practic-card__our-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .practic-card__btn {
+        background: #007bff;
+        margin-right: 60px;
+        width: 130px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .practic-card__btn:last-child {
+        margin-right: 0;
+    }
+
+    .practic-card__btn:hover {
+        color: #212529;;
+    }
+}
+
+.widget-svg {
+    width: 40px!important;
+    height: 40px!important;
+}
+
+.card__download-doc__icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.label {
+    color: black;
+}
+
+.ui.page.modals.dimmer.transition.visible.active {
+    overflow-y: hidden;
+}

@@ -1,0 +1,182 @@
+.rating-table {
+    width: 800px;
+    background: #ffffff;
+    overflow-y: scroll;
+    height: 570px;
+
+    &-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    &__text {
+        min-width: 170px;
+        text-align: center;
+        border-bottom: 2px solid;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+    }
+
+    &__tools {
+        display: flex;
+        align-items: flex-start;
+        width: 150px;
+        font-size: 30px;
+        justify-content: space-between;
+        color: #007bff;
+    }
+
+    &__tools > i {
+        cursor: pointer;
+    }
+
+    &__tools > i:hover {
+        color: rgb(21, 98, 170);
+    }
+}
+
+.rating-table-competence {
+    width: 100%;
+    background: white;
+    border: 2px solid rgb(77, 110, 44);
+    box-sizing: border-box;
+
+    & > p {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        border-bottom: 1px solid rgb(77, 110, 44);
+        display: flex;
+        font-size: 16px;
+        height: auto;
+        padding-left: 10px;
+        color: black;
+    }
+
+    &__item:last-child {
+        border-bottom: none;
+    }
+
+    &__item_first {
+        display: flex;
+        height: 30px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &__text_first {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__cell {
+        height: 100%;
+    }
+
+    &__cell_criteria {
+        width: 70%;
+        height: auto;
+    }
+
+    &__cell_appraisal {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        border-left: 1px solid rgb(77, 110, 44);
+        border-right: 1px solid rgb(77, 110, 44);
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__cell_remarks {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__text {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 150px;
+        color: black;
+    }
+
+    &__span {
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+
+    &__item-text {
+        width: 210px;
+        color: black;
+    }
+
+    &__textarea {
+        resize: none;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        border: 0;
+    }
+
+    &__text_first-criteria {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__span_appraisal {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+}
+
+.rating-table-btns {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    &__button {
+        background-color: #007bff;
+        border: none;
+        outline: none;
+        color: white;
+        width: 100px;
+        height: 30px;
+        border-radius: 3px;
+    }
+
+    &__button:first-child {
+        margin-right: 50px;
+    }
+
+    &__button:hover {
+        background-color: #056cda;
+    }
+}
+
+input[disabled].rating-table-competence__input {
+    background: #f7f7f7;
+}
+
+textarea[disabled].rating-table-competence__textarea {
+    background: #f7f7f7;
+}

@@ -1,0 +1,44 @@
+.filter {
+    display: flex;
+    align-items: center;
+
+    &__text {
+        color: grey;
+        font-size: 17px;
+        font-weight: bold;
+        margin-right: 30px;
+        margin-bottom: 0; 
+    }
+
+    &__btn {
+        font-weight: bold;
+        width: 120px;
+        padding: 2px;
+        border-radius: 12px;
+        background: #338cec;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        height: 25px;
+        opacity: 0.9;
+        transition: all 0.2s;
+    }
+
+    &__btn:hover {
+        opacity: 1;
+    }
+
+    &__items {
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn > span {
+        color: black;
+        font-size: 14px;
+        position: relative;
+        left: 30px;
+    }
+}

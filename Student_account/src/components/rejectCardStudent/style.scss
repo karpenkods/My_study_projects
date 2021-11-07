@@ -1,0 +1,328 @@
+.student-card {
+    width: 800px;
+    margin: 0 auto;
+    border: 2px rgb(128, 128, 128) solid;
+    background-color: rgb(248, 248, 248);
+    font-family: Neucha;
+}
+
+.card__header {
+    background-color: white;
+    border-bottom: 2px rgb(206, 206, 206) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__label {
+    font-size: 28px;
+    padding: 20px;
+    margin: 0;
+}
+
+.card__controls {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: right;
+    font-size: 35px;
+    color: #007bff;
+    padding: 20px;
+    cursor: pointer;
+
+    & > i:hover{
+        color: rgb(21, 98, 170);
+    }
+}
+
+.card__profile-pic {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.card__student {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px rgb(128, 128, 128) solid;
+
+    &-info {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &-name {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    &-contact {
+        margin: 0;
+        margin-left: 20px;
+    }
+}
+
+.card__contacts {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+    justify-content: end;
+
+    &-mobile-icon {
+        font-size: 30px;
+    }
+}
+
+.card__info-label {
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.card__info-text {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.card__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card__main-rating {
+    margin: 0 auto;
+    width: 600px;
+    height: 80px;
+    border: 1px;
+    background-color: rgb(224, 224, 224);
+    border: 2px rgb(128, 128, 128) solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    &-rating-label {
+        font-size: 17px;
+        color: rgb(100, 100, 100);
+        text-decoration: underline;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+}
+
+.card__stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    width: 50%;
+}
+
+.card__download-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: rgb(100, 100, 100);
+
+    &__icon {
+        font-size: 30px;
+    }
+
+    & :hover {
+        color: rgb(49, 49, 49);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.card__comment {
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    border: 1px;
+    background-color: rgb(224, 224, 224);
+    border: 2px rgb(128, 128, 128) solid;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.card__curator {
+    // float: right;
+    // margin: auto;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+
+    &__choose-button {
+        background-color: #007bff;
+        font-size: 17px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        width: 130px;
+        height: 50px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        color: white;
+        font-weight: bold;
+    }
+
+    &__choose-button :hover {
+        background-color: #033870;
+    }
+
+    &__action {
+        text-align: center;
+    text-decoration: underline;
+    color: #007bff;
+    width: 170px;
+    }
+
+    &__action_student {
+        text-align: center;
+        text-decoration: underline;
+        color: #007bff;
+        width: 100px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    &__action-curator {  
+        text-align: center;
+        text-decoration: underline;
+        color: #007bff;
+        width: 170px;
+    }
+
+    &__action :hover {
+        color: #033870;
+        cursor: pointer;
+    }
+}
+
+/*sprite with stars*/
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+    background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
+}
+  
+#reviewStars-input {
+    
+    /*fix floating problems*/
+    overflow: hidden;
+    *zoom: 1;
+    /*end of fix floating problems*/
+    
+    position: relative;
+    float: left;
+}
+  
+#reviewStars-input input {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    width: 43px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+  
+#reviewStars-input input:checked ~ label {
+    background-position: 0 -40px;
+    height: 40px;
+    width: 43px;
+}
+  
+#reviewStars-input label {
+    background-position: 0 0;
+    height: 40px;
+    width: 43px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    
+    position: relative;
+    z-index: 1;
+}
+  
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+    background-position: 0 -40px;
+    height: 40px;
+    width: 43px;
+}
+
+.ui.page.modals.dimmer.transition.visible.active.page {
+    border: 0;
+}
+
+.card__controls > i:last-child {
+    margin-left: 20px;
+}
+
+.card-our {
+    width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.card-our > button { 
+    width: 100px;
+    background: #007bff;
+    border: 1px solid gray;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.card-our__btn:first-child {
+    margin-right: 60px;
+}
+
+.ui.input.card__info-text_input.bt {
+    margin-left: 0;
+}
+
+.student-card-reject__our-btn { 
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.student-card-reject__our-btn > button {
+    background: #007bff;
+    margin-right: 60px;
+    width: 130px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+.student-card-reject__our-btn > button:last-child {
+    margin-right: 0;
+}

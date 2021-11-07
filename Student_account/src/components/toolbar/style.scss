@@ -1,0 +1,11 @@
+.tools {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    & > i {
+        color: #007bff;
+        font-size: 35px;
+        cursor: pointer;
+    }
+}
