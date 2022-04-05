@@ -1,0 +1,619 @@
+html {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+input:focus,
+button:focus,
+.form-select:focus {
+    box-shadow: none !important;
+}
+
+.navbar {
+    padding: 20px 0;
+    box-shadow: 0px 9.03012px 27.0904px rgba(176, 190, 197, 0.32), 0px 3.38629px 5.64383px rgba(176, 190, 197, 0.32);
+}
+
+.navbar form input {
+    margin-left: 40px;
+    height: 44px;
+    border-radius: 0;
+    font-size: 14px;
+    height: 50px;
+    width: 581px;
+    color: #B0B0B0;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.navbar form input:focus {
+    border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.head {
+    display: flex;
+}
+
+
+main {
+    background: #E5E5E5;
+    height: 100vh;
+}
+
+main h4 {
+    margin-left: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.loading {
+    position: relative;
+    height: 300px;
+    background-color: #fff;
+}
+
+.loading img {
+    position: absolute;
+    top: 50%;
+    margin-top: -36px;
+    left: 50%;
+    margin-left: -36px;
+}
+
+.loading img.spinner {
+    animation: 1s linear 0s normal none infinite running spinner;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.table {
+    margin-left: 40px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.table>:not(caption)>*>* {
+    border-bottom-width: 0px;
+}
+
+.table tbody {
+    background-color: #fff;
+}
+
+.table thead th {
+    font-weight: 400;
+    font-size: 12px;
+    color: #B0B0B0;
+    cursor: pointer;
+}
+
+.table thead th:hover {
+    color: #333;
+}
+
+.table thead th.not-hover {
+    cursor: default;
+}
+
+.table thead th.not-hover:hover {
+    color: #B0B0B0;
+}
+
+.table thead .active {
+    color: #9873FF;
+    font-weight: 700;
+}
+
+.table thead .active:hover,
+.table thead .active:focus {
+    color: #9873FF;
+    font-weight: 700;
+}
+
+.table tbody .contacts a {
+    position: relative;
+    margin-right: 4px;
+    z-index: 1 !important;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.table tbody .contacts a:hover {
+    opacity: 1;
+}
+
+.table tbody .contacts img {
+    position: relative;
+    z-index: -1;
+}
+
+.table tbody tr {
+    height: 60px;
+    border-bottom: 1px solid #C8C5D1;
+}
+
+.table td {
+    font-size: 14px;
+}
+
+span.grey {
+    margin-left: 5px;
+    color: #B0B0B0;
+}
+
+.table__id {
+    font-size: 12px !important;
+    color: #B0B0B0;
+}
+
+.tooltips {
+    position: relative;
+    z-index: 9999 !important;
+    position: fixed;
+    padding: 8px 14px 8px 14px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: #333;
+}
+
+.tooltips::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+#change {
+    cursor: pointer;
+}
+
+#delete {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#change:hover {
+    color: #9873FF;
+}
+
+#delete:hover {
+    color: #f06a4d;
+}
+
+#change img,
+#delete img {
+    margin-top: -5px;
+}
+
+.btn-create {
+    margin-top: 25px;
+    height: 44px;
+    width: 216px;
+    border: 1px solid #9873FF;
+    border-radius: 0;
+    color: #9873FF;
+    font-size: 14px;
+    fill: #9873FF;
+}
+
+.btn-create svg {
+    margin-top: -3px;
+    margin-right: 7px;
+    fill: inherit;
+}
+
+.btn-create:hover {
+    background-color: #8052FF;
+    color: #fff;
+    fill: #fff;
+}
+
+.btn-close {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    text-align: start !important;
+    margin-bottom: 60px !important;
+}
+
+.modal-dialog {
+    width: 450px !important;
+}
+
+.modal-content {
+    border-radius: 0 !important;
+    border: 0;
+}
+
+.modal-header {
+    border: none !important;
+    padding-bottom: 0;
+}
+
+.modal-title {
+    position: relative;
+}
+
+.btn-modal {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    width: 130px;
+    height: 44px;
+    color: #fff;
+    border-radius: 0;
+    background-color: #9873FF;
+}
+
+.btn-modal:hover {
+    background-color: #8052FF;
+    color: #fff;
+}
+
+.modal-body a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.modal-body a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.modal-delete-client .modal-body p {
+    margin: 0;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+.modal-create-client .modal-body,
+.modal-change-client .modal-body {
+    padding: 0;
+}
+
+.modal-create-client form,
+.modal-change-client form {
+    padding: 5px 0 25px;
+}
+
+.modal form .inputs {
+    padding: 0 30px;
+}
+
+.modal form .inputs input {
+    padding-left: 0;
+    position: relative;
+    z-index: 4;
+    background-color: transparent;
+    font-size: 14px;
+    color: #333;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #c8c5d180;
+}
+
+.modal form .inputs input:focus {
+    border-bottom: 1px solid #c8c5d180;
+}
+
+.modal form .inputs .error-input {
+    border-bottom: 1px solid #F06A4D50;
+}
+
+.surname-placeholder,
+.name-placeholder,
+.middle-name-placeholder,
+.surname-placeholder-change,
+.name-placeholder-change,
+.middle-name-placeholder-change {
+    position: relative;
+}
+
+.surname-placeholder::after,
+.name-placeholder::after {
+    content: "*";
+    top: 2px;
+    position: absolute;
+    z-index: 0;
+    font-size: 20px;
+    color: #9873FF;
+}
+
+.surname-placeholder::before,
+.name-placeholder::before,
+.middle-name-placeholder::before {
+    position: absolute;
+    z-index: 0;
+    top: 6px;
+    font-size: 14px;
+    color: #B0B0B0;
+}
+
+.surname-placeholder::before {
+    content: "Фамилия";
+}
+
+.name-placeholder::before {
+    content: "Имя";
+}
+
+.middle-name-placeholder::before {
+    content: "Отчество";
+}
+
+.surname-placeholder::after {
+    padding-left: 58px;
+}
+
+.name-placeholder::after {
+    padding-left: 27px;
+}
+
+.surname-placeholder-change::before,
+.name-placeholder-change::before,
+.middle-name-placeholder-change::before {
+    position: absolute;
+    z-index: 0;
+    top: -8px;
+    font-size: 10px;
+    color: #B0B0B0;
+}
+
+.surname-placeholder-change::before {
+    content: 'Фамилия';
+}
+
+.name-placeholder-change::before {
+    content: 'Имя';
+}
+
+.middle-name-placeholder-change::before {
+    content: 'Отчество';
+}
+
+.surname-placeholder-change::after,
+.name-placeholder-change::after {
+    position: absolute;
+    top: -12px;
+    content: "*";
+    z-index: 0;
+    font-size: 14px;
+    color: #9873FF;
+}
+
+.surname-placeholder-change::after {
+    padding-left: 41px;
+}
+
+.name-placeholder-change::after {
+    padding-left: 19px;
+}
+
+.modal form .create-contacts {
+    background-color: #c8c5d130;
+    padding: 25px 30px;
+}
+
+.modal form .create-contacts .input-group {
+    border-radius: 0 !important;
+    background-color: transparent;
+}
+
+.modal form .create-contacts .form-select {
+    border: 1px solid #C8C5D1;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-radius: 0 !important;
+    background-color: #E7E5EB;
+    appearance: none;
+    background-image: url("../img/arrow-select-down.svg");
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 80px center;
+    outline: 0;
+}
+
+.modal form .create-contacts .form-select:focus {
+    background-image: url("../img/arrow-select-up.svg");
+}
+
+.modal form .create-contacts input {
+    width: 200px;
+    border: 1px solid #C8C5D1;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.modal form .create-contacts input:focus {
+    border: 1px solid #C8C5D1;
+}
+
+.modal form .create-contacts input::placeholder {
+    color: #b0b0b0;
+}
+
+.modal form .create-contacts .btn-group-delete {
+    position: relative;
+    z-index: 1;
+    padding: 0 7px;
+    background-color: #E7E5EB;
+    border: 1px solid #C8C5D1;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+    transition: 0.2s;
+}
+
+.modal form .create-contacts .btn-group-delete:hover {
+    border: 1px solid #F06A4D;
+}
+
+.modal form .create-contacts .btn-group-delete img {
+    position: relative;
+    z-index: -1;
+    margin-top: -3px;
+}
+
+.modal form .create-contacts span {
+    font-weight: 600;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.modal form .create-contacts span img {
+    margin-top: -2px;
+    margin-right: 3px;
+}
+
+.modal form .create-contacts span:hover {
+    color: #9873ff;
+}
+
+.modal .modal-id {
+    color: #b0b0b0;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.modal .error-text {
+    margin-top: 8px;
+    margin-bottom: 9px;
+    text-align: center;
+    font-size: 14px;
+    color: #F06A4D;
+}
+
+@media (max-width: 1200px) {
+    .box-button {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    main h4 {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .col-12 {
+        padding-left: 0;
+    }
+
+    .table {
+        margin-left: 0;
+        min-width: 728px;
+    }
+
+    .heading {
+        padding-left: 12px;
+    }
+
+    #delete {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+      height: 50px;
+        padding: 0;
+    }
+
+    #search {
+        margin-top: 3px;
+        height: 24px;
+        width: 100%;
+    }
+
+    .head {
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    h4 {
+        margin-top: 0px;
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .box {
+        max-width: 728px;
+        overflow-x: auto;
+    }
+
+    td.contacts {
+        width: 150px;
+        padding-right: 0;
+    }
+
+    .modal-dialog {
+        width: 95% !important;
+    }
+
+    .modal-title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-id {
+        padding-left: 0 !important;
+    }
+
+    .modal-header {
+        padding-left: 0;
+    }
+
+    .inputs {
+        padding-left: 15px !important;
+    }
+
+    .create-contacts {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .modal form .create-contacts input {
+       width: 38% !important;
+   }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
